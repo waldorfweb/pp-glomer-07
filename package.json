@@ -59,7 +59,6 @@
         "sass-loader": "^7.3.1",
         "serialize-javascript": "^3.1.0",
         "stylelint": "^10.1.0",
-        "stylelint-config-twbs-bootstrap": "^1.1.0",
         "vue-loader": "^15.9.2",
         "webpack": "^4.43.0",
         "webpack-cli": "^3.3.11",
@@ -67,8 +66,8 @@
         "webpack-require-from": "^1.8.1"
     },
     "dependencies": {
-        "Ceres": "git+https://git@github.com/plentymarkets/plugin-ceres.git#5.0.56",
         "bootstrap": "4.4.1",
+        "Ceres": "git+https://git@github.com/plentymarkets/plugin-ceres.git#5.0.56",
         "core-js": "^3.6.5",
         "custom-event-polyfill": "^1.0.0",
         "dayjs": "^1.8.26",
