@@ -1,11 +1,11 @@
 {
-    "identifier": "Waldorfshop7::FooterTitleWidget",
+    "identifier": "Glomer7::FooterTitleWidget",
     "label": "Widget.footerHeadline",
     "previewImageURL": "/images/dia-widgets/footer-headline.png",
     "type": "static",
     "categories": ["dia"],
     "position": 400,
-    "widgetClass": "Waldorfshop7\\Widgets\\Footer\\FooterTitleWidget",
+    "widgetClass": "Glomer7\\Widgets\\Footer\\FooterTitleWidget",
     "settings": {
         "text": {
             "type": "text",

@@ -1,5 +1,5 @@
 <?php
-namespace Waldorfshop7\Providers;
+namespace Glomer7\Providers;
 
 use Plenty\Modules\Webshop\ItemSearch\Helpers\ResultFieldTemplate;
 use Plenty\Modules\Webshop\Template\Providers\TemplateServiceProvider;
@@ -8,11 +8,11 @@ use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\Templates\Twig;
 use Plenty\Plugin\ConfigRepository;
 use IO\Helper\ComponentContainer;
-use Waldorfshop7\Middlewares\ThemeMiddleware;
+use Glomer7\Middlewares\ThemeMiddleware;
 
 /**
  * Class ThemeServiceProvider
- * @package Waldorfshop7\Providers
+ * @package Glomer7\Providers
  */
 class ThemeServiceProvider extends TemplateServiceProvider
 {
@@ -26,32 +26,32 @@ class ThemeServiceProvider extends TemplateServiceProvider
 
     public function boot(Twig $twig, Dispatcher $dispatcher, ConfigRepository $config)
     {
-        $this->overrideTemplate('Ceres::Category.Macros.CategoryTree', 'Waldorfshop7::Category.Macros.CategoryTree');
-        $this->overrideTemplate('Ceres::PageDesign.PageDesign', 'Waldorfshop7::PageDesign.PageDesign');
-        $this->overrideTemplate('Ceres::PageDesign.Partials.Footer', 'Waldorfshop7::PageDesign.Partials.Footer');
-        $this->overrideTemplate('Ceres::PageDesign.Partials.Head', 'Waldorfshop7::PageDesign.Partials.Head');
-        $this->overrideTemplate('Ceres::Widgets.Category.ItemGridWidget', 'Waldorfshop7::Widgets.Category.ItemGridWidget');
-        $this->overrideTemplate('Ceres::Widgets.Common.ItemListWidget', 'Waldorfshop7::Widgets.Common.ItemListWidget');
-        $this->overrideTemplate('Ceres::Widgets.Header.TopBarWidget', 'Waldorfshop7::Widgets.Header.TopBarWidget');
-        $this->overrideTemplate('Ceres::Widgets.Item.ItemImageWidget', 'Waldorfshop7::Widgets.Item.ItemImageWidget');
+        $this->overrideTemplate('Ceres::Category.Macros.CategoryTree', 'Glomer7::Category.Macros.CategoryTree');
+        $this->overrideTemplate('Ceres::PageDesign.PageDesign', 'Glomer7::PageDesign.PageDesign');
+        $this->overrideTemplate('Ceres::PageDesign.Partials.Footer', 'Glomer7::PageDesign.Partials.Footer');
+        $this->overrideTemplate('Ceres::PageDesign.Partials.Head', 'Glomer7::PageDesign.Partials.Head');
+        $this->overrideTemplate('Ceres::Widgets.Category.ItemGridWidget', 'Glomer7::Widgets.Category.ItemGridWidget');
+        $this->overrideTemplate('Ceres::Widgets.Common.ItemListWidget', 'Glomer7::Widgets.Common.ItemListWidget');
+        $this->overrideTemplate('Ceres::Widgets.Header.TopBarWidget', 'Glomer7::Widgets.Header.TopBarWidget');
+        $this->overrideTemplate('Ceres::Widgets.Item.ItemImageWidget', 'Glomer7::Widgets.Item.ItemImageWidget');
 
 //        $dispatcher->listen("IO.Resources.Import", function(ResourceContainer $container)
 //        {
-//            $container->addScriptTemplate('Waldorfshop7::ItemList.Components.CategoryItem');
+//            $container->addScriptTemplate('Glomer7::ItemList.Components.CategoryItem');
 //        },0);
 
         $dispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
         {
             if ($container->getOriginComponentTemplate()=='Ceres::Customer.Components.UserLoginHandler')
             {
-                $container->setNewComponentTemplate('Waldorfshop7::Customer.Components.UserLoginHandler');
+                $container->setNewComponentTemplate('Glomer7::Customer.Components.UserLoginHandler');
             }
         }, self::PRIORITY);
 
         /** @var ResultFieldTemplate $resultFieldTemplate */
         $resultFieldTemplate = pluginApp(ResultFieldTemplate::class);
         $resultFieldTemplate->setTemplates([
-            ResultFieldTemplate::TEMPLATE_CATEGORY_TREE   => 'Waldorfshop7::ResultFields.CategoryTree'
+            ResultFieldTemplate::TEMPLATE_CATEGORY_TREE   => 'Glomer7::ResultFields.CategoryTree'
         ]);
 
         /** @var ContentCacheQueryParamsRepositoryContract $contentCacheQueryParamsRepository */

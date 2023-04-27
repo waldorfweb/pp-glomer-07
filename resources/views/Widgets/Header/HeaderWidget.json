@@ -1,11 +1,11 @@
 {
-    "identifier": "Waldorfshop7::HeaderWidget",
+    "identifier": "Glomer7::HeaderWidget",
     "label": "Widget.Header",
     "previewImageURL": "/images/dia-widgets/header-navbar.png",
     "type": "header",
     "categories": ["dia"],
     "position": 0,
-    "widgetClass": "Waldorfshop7\\Widgets\\Header\\HeaderWidget",
+    "widgetClass": "Glomer7\\Widgets\\Header\\HeaderWidget",
     "settings": {
         "enableLanguageSelect": {
             "type": "checkbox",

@@ -1,6 +1,6 @@
 <?php
 
-namespace Waldorfshop7\Services;
+namespace Glomer7\Services;
 
 use IO\Constants\CategoryType;
 use IO\Guards\AuthGuard;

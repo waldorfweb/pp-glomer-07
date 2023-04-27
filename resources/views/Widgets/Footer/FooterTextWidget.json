@@ -1,11 +1,11 @@
 {
-    "identifier": "Waldorfshop7::FooterTextWidget",
+    "identifier": "Glomer7::FooterTextWidget",
     "label": "Widget.textLabel",
     "previewImageURL": "/images/dia-widgets/footer-text.png",
     "type": "static",
     "categories": ["dia"],
     "position": 800,
-    "widgetClass": "Waldorfshop7\\Widgets\\Footer\\FooterTextWidget",
+    "widgetClass": "Glomer7\\Widgets\\Footer\\FooterTextWidget",
     "settings": {
         "text": {
             "type": "codeEditor",

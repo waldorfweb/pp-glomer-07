@@ -1,11 +1,11 @@
 {
-    "identifier": "Waldorfshop7::CheckoutHeaderWidget",
+    "identifier": "Glomer7::CheckoutHeaderWidget",
     "label": "Widget.checkoutHeader",
     "previewImageURL": "/images/dia-widgets/header-checkout-navbar.png",
     "type": "header",
     "categories": ["dia"],
     "position": 0,
-    "widgetClass": "Waldorfshop7\\Widgets\\Header\\CheckoutHeaderWidget",
+    "widgetClass": "Glomer7\\Widgets\\Header\\CheckoutHeaderWidget",
     "settings": {
         "companyLogoUrl": {
             "type": "file",
