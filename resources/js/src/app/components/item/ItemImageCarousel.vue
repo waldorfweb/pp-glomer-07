@@ -131,7 +131,7 @@ export default {
             ).slice(0, this.maxQuantity);
 
             carouselImages.forEach((image) => {
-                image.url = image.url;
+                image.url = image.url.replace("https://cdn02.plentymarkets.com/rm2ukznxe8l9/", "https://cdn02.plentymarkets.com/rm2ukznxe8l9/");
             });
 
             return carouselImages;
@@ -145,7 +145,7 @@ export default {
             ).slice(0, this.maxQuantity);
 
             singleImages.forEach((image) => {
-               image.url = image.url;
+               image.url = image.url.replace("https://cdn02.plentymarkets.com/rm2ukznxe8l9/", "https://cdn02.plentymarkets.com/rm2ukznxe8l9/");
             });
 
             return singleImages;
