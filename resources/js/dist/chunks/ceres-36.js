@@ -72,14 +72,14 @@ __webpack_require__.r(__webpack_exports__);
     carouselImages: function carouselImages() {
       var carouselImages = this.$options.filters.itemImages(this.currentVariation.images, "url").slice(0, this.maxQuantity);
       carouselImages.forEach(function (image) {
-        image.url = image.url.replace("https://cdn02.plentymarkets.com/rm2ukznxe8l9/", "https://cdn02.plentymarkets.com/rm2ukznxe8l9/");
+        image.url = image.url.replace("https://cdn02.plentymarkets.com/rm2ukznxe8l9/", "https://waldorfshop.sirv.com/") + "?scale.width=100&scale.height=100";
       });
       return carouselImages;
     },
     singleImages: function singleImages() {
       var singleImages = this.$options.filters.itemImages(this.currentVariation.images, "url").slice(0, this.maxQuantity);
       singleImages.forEach(function (image) {
-        image.url = image.url.replace("https://cdn02.plentymarkets.com/rm2ukznxe8l9/", "https://cdn02.plentymarkets.com/rm2ukznxe8l9/");
+        image.url = image.url.replace("https://cdn02.plentymarkets.com/rm2ukznxe8l9/", "https://waldorfshop.sirv.com/") + "?scale.width=700&scale.height=700";
       });
       return singleImages;
     }
