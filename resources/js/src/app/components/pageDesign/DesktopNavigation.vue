@@ -1,5 +1,5 @@
 <template>
-    <ul data-level="1" :class="'collapse nav-dropdown-' + navDropdownCounter">
+    <ul data-level="1" :class="'collapse nav-dropdown-' + navCounter">
         <template v-if="isNavigationInitialized">
             <li v-for="category in categories">
                 <ul v-if="showNextLevel(category)" class="collapse-inner">

@@ -7631,7 +7631,7 @@ var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c("ul", {
-    class: "collapse nav-dropdown-" + _vm.navDropdownCounter,
+    class: "collapse nav-dropdown-" + _vm.navCounter,
     attrs: {
       "data-level": "1"
     }
