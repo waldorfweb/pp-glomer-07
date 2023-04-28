@@ -4,7 +4,7 @@
 {{ Twig.if("item.data.images.variation[0] is not empty") }}
     {{ Twig.set("image", "item.data.images.variation[0]") }}
 {{ Twig.endif() }}
-{{ Twig.set("imageURL", "image.urlMiddle | replace({'https://cdn02.plentymarkets.com/rm2ukznxe8l9/': 'https://waldorfshop.sirv.com/', '/middle/' : '/full/'}) ~ '?scale.width=270&scale.height=270'") }}
+{# {{ Twig.set("imageURL", "image.urlMiddle | replace({'https://cdn02.plentymarkets.com/rm2ukznxe8l9/': 'https://waldorfshop.sirv.com/', '/middle/' : '/full/'}) ~ '?scale.width=270&scale.height=270'") }} #}
 {{ Twig.set("hasChildren", "'false'") }}
 {{ Twig.if("item.data.item.salableVariationCount > 1 and not showAllVariationsOfItemId") }}
     {{ Twig.set("hasChildren", "'true'") }}
