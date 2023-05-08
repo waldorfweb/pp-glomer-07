@@ -24864,10 +24864,6 @@ nav.navbar .container-max {
 rot #561d6f
 	grün #42974c
 */
-#page-body {
-  margin-top: -4px;
-}
-
 #page-body > .container-max > .row > .col {
   padding-top: 20px !important;
 }
