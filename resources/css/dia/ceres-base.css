@@ -22675,11 +22675,6 @@ h6 {
   padding-bottom: 0px;
 }
 
-.navbar .brand-wrapper {
-  float: left;
-  max-width: 160px !important;
-}
-
 .navbar-brand img {
   height: 100px;
   max-height: 56px;
