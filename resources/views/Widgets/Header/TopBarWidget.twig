@@ -49,7 +49,6 @@
                 {% if searchStyle == "permanent" %}
                     {{ Twig.if("overrideSearchBar | trim is empty") }}
                                         <a href="{{ Twig.print('urls.home') }}" class="navbar-brand navbar-brand-neu py-2 newbrand"><picture><source srcset="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/glomer/layout/logo.svg"> <img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/glomer/layout/logo.svg" alt="Waldorfshop" class="img-fluid" width="240px" height="auto"></picture></a>
-
                         <div class="always-visible-search flex-grow-1">
                             {% if not isPreview %}<lazy-hydrate when-idle>{% endif %}
                                 <item-search>
