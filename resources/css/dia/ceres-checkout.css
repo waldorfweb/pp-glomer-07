@@ -24859,10 +24859,6 @@ nav.navbar .container-max {
 rot #561d6f
 	grün #42974c
 */
-#page-body > .container-max > .row > .col {
-  padding-top: 20px !important;
-}
-
 .main-navbar-collapsable .mainmenu > li > a {
   padding: 1rem 0.5rem;
   color: #561d6f;
