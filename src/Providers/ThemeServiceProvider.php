@@ -51,7 +51,8 @@ class ThemeServiceProvider extends TemplateServiceProvider
         /** @var ResultFieldTemplate $resultFieldTemplate */
         $resultFieldTemplate = pluginApp(ResultFieldTemplate::class);
         $resultFieldTemplate->setTemplates([
-            ResultFieldTemplate::TEMPLATE_CATEGORY_TREE   => 'Glomer7::ResultFields.CategoryTree'
+            ResultFieldTemplate::TEMPLATE_CATEGORY_TREE   => 'Glomer7::ResultFields.CategoryTree',
+            ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'Glomer7::ResultFields.ListItem',
         ]);
 
         /** @var ContentCacheQueryParamsRepositoryContract $contentCacheQueryParamsRepository */
